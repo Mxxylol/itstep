@@ -176,24 +176,24 @@
 # nick = Child()
 #
 #
-# class Computer:
-#
-#     def calculate(self):
-#         print("Calculating...")
-#
-# class Display:
-#     def display(self):
-#         print("I display the image on the screen")
-#
-# class smartPhone(Display, Computer):
-#     pass
-#
-# class SmartPhone(Display, Computer):
-#     pass
-#
-# iphone = SmartPhone()
-# iphone.calculate()
-# iphone.display()
+class Computer:
+
+    def calculate(self):
+        print("Calculating...")
+
+class Display:
+    def display(self):
+        print("I display the image on the screen")
+
+class smartPhone(Display, Computer):
+    pass
+
+class SmartPhone(Display, Computer):
+    pass
+
+iphone = SmartPhone()
+iphone.calculate()
+iphone.display()
 #
 # class Computer:
 #     def __init__(self):
